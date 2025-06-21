@@ -79,7 +79,7 @@ const ViewItems = () => {
   const fetchItems = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5000/api/items');
+      const response = await fetch('https://internshala-backend-j6l3.onrender.com/api/items');
       
       if (response.ok) {
         const data = await response.json();
